@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>Crystal Collector Game</title>
+		<!-- Added link to the jQuery Library -->
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<!-- Added a link to Bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!--CSS link-->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!--JS Links-->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+		
+	</head>
+	<body>
+		<!--Bootstrap Grid-->
+		<div class= "container">
+			<div class = "row">
+				<!--Title-->
+				<div class = "jumbotron">
+					<h1 class = "text-center"><strong>Crystals Collector!</strong></h1>
+				</div>
+				<!--Row 1: Instructions Panel-->
+				<div class = "row">
+					<div class = "col-lg-2">
+					</div>
+					<div class = "col-lg-8">
+						<div class="panel panel-primary">
+							<div class="panel-heading"><center>Instructions:</center></div>
+							<div class="panel-body"><p>You will be given a random number at the start of each game.</p>
+							<p> There are four cystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+							<p> You win the game by matching your total score to the random number, you lose if your total score goes above the random number.</p>
+							<p> The value of each crystal is hidden from you until you click on it.</p>
+							<p> Each time when the game restarts, the value of each crystal will change. </p>
+						</div>
+					</div>
+				</div>
+				<div class = "col-lg-2">
+				</div>
+				<!--Row 2: Random Number Generator Box and Wins and Losses Box-->
+				<div class = "row">
+					<div class = "col-lg-4">
+						<div class="panel panel-default">
+							<div class="panel-body" id ="random-number"></div>
+						</div>
+					</div>
+					<div class = "col-lg-4">
+					</div>
+					<div class = "col-lg-4">
+						<div class="panel panel-default">
+							<div class="panel-body" id = "wins-losses">
+							<p>Wins: </p> 
+							<p>Losses: </p></div>
+						</div>
+					</div>
+					<!--Row 3: Crystal Buttons -->
+					<div class = "row">
+						<div class = "col-lg-5">
+							<div class="panel panel-primary">
+								<div class="panel-heading"><center>Crystals:</center></div>
+								<div class="panel-body">
+									<!--Button 1-->
+									<button id = "green_gem" class="btn btn-default">
+									<img src=http://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Green_Gem_PNG_Clip_Art_Image.png?m=1466329507 width="80"/></button>
+									<!--Button 2-->
+									<button id = "red_gem" class="btn btn-default">
+									<img src=http://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Red_Gem_PNG_Clip_Art_Image.png?m=1466329508 width="80"/></button>
+									<!--Button 3-->
+									<button id = "blue_gem" class="btn btn-default">
+									<img src=http://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Blue_Gem_PNG_Clip_Art_Image.png?m=1466329513 width="80"/></button>
+									<!--Button 4-->
+									<button id = "yellow_gem" class="btn btn-default">
+									<img src=http://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Yellow_Gem_PNG_Clip_Art_Image.png?m=1466329518 width="80"/></button>
+								</div>
+							</div>
+						</div>
+						<div class = "col-lg-2">
+						</div>
+						<div class = "col-lg-4">
+							<div class="panel panel-primary">
+								<div class="panel-heading"><center>Your Total Score:</center></div>
+								<div class="panel-body" id ="total-score">0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
