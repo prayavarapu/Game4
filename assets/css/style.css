@@ -1,0 +1,60 @@
+
+
+h1,
+p{
+	font-family: 'Comfortaa', cursive;
+}
+
+
+
+body{
+    background-image: url("https://images.designtrends.com/wp-content/uploads/2016/04/07103800/Multicoloured-Diamond-Wallpapers.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+img:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+}
+
+
+.jumbotron{
+	background: rgba(255, 255, 255, 0.5);
+	color: black;
+	
+}
+
+
+
+
+#random-number{
+	height: 90px;
+	font-size: 15px;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bold;
+	text-align: center;
+	
+	
+}
+
+#wins-losses{
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+
+#total-score{
+	font-size: 40px;
+	font-family: 'Comfortaa', cursive;
+	height: 120px;
+	text-align: center;
+
+}
+
+
+
+
+
